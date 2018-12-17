@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>GET</title>
+</head>
+<body>
+	<ul></ul>
+	<button id="btn-1">get test</button>
+</body>
+</html>
+
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script type="text/javascript"> 
+	$(document).ready(function(){
+		$("#btn-1").click(function(){
+			$.get("http://localhost/ajax/get_test.php",function(result){
+				alert(result);
+			});
+		});
+	});
+</script>
+
